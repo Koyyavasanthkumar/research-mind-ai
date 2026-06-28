@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from backend.config.settings import settings
-from backend.utils.metrics import metrics_registry
+from config.settings import settings
+from utils.metrics import metrics_registry
 
 
 router = APIRouter(tags=["system"])

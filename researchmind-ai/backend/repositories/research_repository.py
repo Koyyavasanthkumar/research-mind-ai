@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session, joinedload
 
-from backend.models.database import (
+from models.database import (
     AgentExecution,
     Citation,
     ExecutionLog,

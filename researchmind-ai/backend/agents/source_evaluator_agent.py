@@ -3,8 +3,8 @@ from __future__ import annotations
 from datetime import datetime
 from urllib.parse import urlparse
 
-from backend.agents.base import BaseAgent
-from backend.models.schemas import RankedSource, ResearchState, SearchResult
+from agents.base import BaseAgent
+from models.schemas import RankedSource, ResearchState, SearchResult
 
 
 class SourceEvaluatorAgent(BaseAgent):

@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from collections import defaultdict
 
-from backend.agents.base import BaseAgent
-from backend.models.schemas import ResearchState, VerifiedClaim, VerifiedInformation
+from agents.base import BaseAgent
+from models.schemas import ResearchState, VerifiedClaim, VerifiedInformation
 
 
 class FactCheckerAgent(BaseAgent):

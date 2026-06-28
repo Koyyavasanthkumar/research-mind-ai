@@ -6,13 +6,13 @@ from pathlib import Path
 from fastapi import BackgroundTasks, HTTPException, status
 from sqlalchemy.orm import Session
 
-from backend.graph.workflow import research_workflow
-from backend.config.settings import settings
-from backend.models.database import ResearchProject, User
-from backend.models.schemas import ResearchState
-from backend.repositories.research_repository import ResearchRepository
-from backend.schemas.research import ResearchStartRequest
-from backend.utils.cache import TTLCache
+from graph.workflow import research_workflow
+from config.settings import settings
+from models.database import ResearchProject, User
+from models.schemas import ResearchState
+from repositories.research_repository import ResearchRepository
+from schemas.research import ResearchStartRequest
+from utils.cache import TTLCache
 
 
 RESEARCH_CACHE_VERSION = "depth-v2"

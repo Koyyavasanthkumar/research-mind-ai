@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from backend.agents.base import BaseAgent
-from backend.models.schemas import ResearchState, ResearchTask
+from agents.base import BaseAgent
+from models.schemas import ResearchState, ResearchTask
 
 
 class GapAnalysisAgent(BaseAgent):

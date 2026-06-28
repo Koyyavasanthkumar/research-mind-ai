@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from backend.agents.base import BaseAgent
-from backend.models.schemas import ResearchState, SummaryBundle
-from backend.utils.gemini import gemini_client
+from agents.base import BaseAgent
+from models.schemas import ResearchState, SummaryBundle
+from utils.gemini import gemini_client
 
 
 class SummarizerAgent(BaseAgent):

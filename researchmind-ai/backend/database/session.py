@@ -3,7 +3,7 @@ from collections.abc import Generator
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
-from backend.config.settings import settings
+from config.settings import settings
 
 
 connect_args = {"check_same_thread": False} if settings.database_url.startswith("sqlite") else {}

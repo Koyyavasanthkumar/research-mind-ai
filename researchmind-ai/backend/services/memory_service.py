@@ -1,10 +1,10 @@
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 
-from backend.memory.vector_store import research_memory
-from backend.models.database import User
-from backend.repositories.research_repository import ResearchRepository
-from backend.schemas.memory import MemoryStoreRequest
+from memory.vector_store import research_memory
+from models.database import User
+from repositories.research_repository import ResearchRepository
+from schemas.memory import MemoryStoreRequest
 
 
 class MemoryService:

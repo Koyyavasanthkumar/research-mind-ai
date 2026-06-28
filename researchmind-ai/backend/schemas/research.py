@@ -3,8 +3,8 @@ from typing import Any
 
 from pydantic import BaseModel, Field, field_validator
 
-from backend.models.schemas import CitationStyle, Report, ResearchState
-from backend.utils.sanitization import sanitize_text
+from models.schemas import CitationStyle, Report, ResearchState
+from utils.sanitization import sanitize_text
 
 
 class ResearchStartRequest(BaseModel):

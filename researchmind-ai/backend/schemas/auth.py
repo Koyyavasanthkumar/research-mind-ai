@@ -2,7 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel, EmailStr, Field, field_validator
 
-from backend.utils.sanitization import sanitize_text
+from utils.sanitization import sanitize_text
 
 
 class UserCreate(BaseModel):

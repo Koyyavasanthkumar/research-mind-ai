@@ -9,11 +9,11 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 
-from backend.config.settings import settings
-from backend.database.session import get_db
-from backend.models.database import User
-from backend.repositories.user_repository import UserRepository
-from backend.schemas.auth import TokenPair, UserCreate, UserLogin
+from config.settings import settings
+from database.session import get_db
+from models.database import User
+from repositories.user_repository import UserRepository
+from schemas.auth import TokenPair, UserCreate, UserLogin
 
 
 password_context = CryptContext(

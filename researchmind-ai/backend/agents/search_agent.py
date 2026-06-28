@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from backend.agents.base import BaseAgent
-from backend.models.schemas import ResearchState
-from backend.utils.search import tavily_search
+from agents.base import BaseAgent
+from models.schemas import ResearchState
+from utils.search import tavily_search
 
 
 class SearchAgent(BaseAgent):

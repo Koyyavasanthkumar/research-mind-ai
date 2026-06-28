@@ -3,9 +3,9 @@ from __future__ import annotations
 from collections import defaultdict
 from html import escape
 
-from backend.agents.base import BaseAgent
-from backend.models.schemas import Report, ResearchState
-from backend.utils.pdf import export_report_pdf
+from agents.base import BaseAgent
+from models.schemas import Report, ResearchState
+from utils.pdf import export_report_pdf
 
 
 class ReportGeneratorAgent(BaseAgent):

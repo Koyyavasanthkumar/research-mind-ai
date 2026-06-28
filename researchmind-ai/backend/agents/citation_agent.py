@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from datetime import datetime
 
-from backend.agents.base import BaseAgent
-from backend.models.schemas import Citation, CitationStyle, RankedSource, ResearchState
+from agents.base import BaseAgent
+from models.schemas import Citation, CitationStyle, RankedSource, ResearchState
 
 
 class CitationAgent(BaseAgent):

@@ -7,8 +7,8 @@ try:
 except ImportError:  # pragma: no cover - optional dependency path for local startup
     chromadb = None
 
-from backend.models.schemas import ExtractedInformation
-from backend.utils.config import settings
+from models.schemas import ExtractedInformation
+from utils.config import settings
 
 logger = logging.getLogger(__name__)
 

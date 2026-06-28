@@ -2,14 +2,14 @@ from fastapi import APIRouter, BackgroundTasks, Depends, status
 from sqlalchemy.orm import Session
 from starlette.concurrency import run_in_threadpool
 
-from backend.database.session import get_db
-from backend.models.database import ResearchProject, User
-from backend.models.schemas import ResearchState
-from backend.repositories.research_repository import ResearchRepository
-from backend.schemas.common import MessageResponse
-from backend.schemas.research import ResearchDetailResponse, ResearchHistoryResponse, ResearchProjectResponse, ResearchStartRequest
-from backend.services.auth_service import get_current_user
-from backend.services.research_service import ResearchService
+from database.session import get_db
+from models.database import ResearchProject, User
+from models.schemas import ResearchState
+from repositories.research_repository import ResearchRepository
+from schemas.common import MessageResponse
+from schemas.research import ResearchDetailResponse, ResearchHistoryResponse, ResearchProjectResponse, ResearchStartRequest
+from services.auth_service import get_current_user
+from services.research_service import ResearchService
 
 
 router = APIRouter(prefix="/research", tags=["research"])

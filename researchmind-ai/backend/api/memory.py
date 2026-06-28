@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Depends, Query, status
 from sqlalchemy.orm import Session
 
-from backend.database.session import get_db
-from backend.models.database import User
-from backend.schemas.common import MessageResponse
-from backend.schemas.memory import MemorySearchResponse, MemoryStoreRequest
-from backend.services.auth_service import get_current_user
-from backend.services.memory_service import MemoryService
+from database.session import get_db
+from models.database import User
+from schemas.common import MessageResponse
+from schemas.memory import MemorySearchResponse, MemoryStoreRequest
+from services.auth_service import get_current_user
+from services.memory_service import MemoryService
 
 
 router = APIRouter(prefix="/memory", tags=["memory"])

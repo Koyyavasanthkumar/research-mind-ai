@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import re
 
-from backend.agents.base import BaseAgent
-from backend.models.schemas import ExtractedInformation, ResearchState
-from backend.utils.gemini import gemini_client
+from agents.base import BaseAgent
+from models.schemas import ExtractedInformation, ResearchState
+from utils.gemini import gemini_client
 
 
 class ExtractorAgent(BaseAgent):

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from backend.models.schemas import AgentLog, ResearchState
+from models.schemas import AgentLog, ResearchState
 
 
 class BaseAgent:

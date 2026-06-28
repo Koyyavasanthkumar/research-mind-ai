@@ -3,9 +3,9 @@ from pathlib import Path
 from fastapi import HTTPException, status
 from sqlalchemy.orm import Session
 
-from backend.models.database import GeneratedReport, User
-from backend.repositories.research_repository import ResearchRepository
-from backend.utils.cache import TTLCache
+from models.database import GeneratedReport, User
+from repositories.research_repository import ResearchRepository
+from utils.cache import TTLCache
 
 
 report_cache: TTLCache[GeneratedReport] = TTLCache(ttl_seconds=120)

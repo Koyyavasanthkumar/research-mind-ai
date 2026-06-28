@@ -6,9 +6,9 @@ import time
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 
-from backend.database.session import SessionLocal
-from backend.repositories.research_repository import ResearchRepository
-from backend.utils.metrics import metrics_registry
+from database.session import SessionLocal
+from repositories.research_repository import ResearchRepository
+from utils.metrics import metrics_registry
 
 logger = logging.getLogger("researchmind.requests")
 
