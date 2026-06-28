@@ -3,7 +3,7 @@ from __future__ import annotations
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 
-from backend.config.settings import settings
+from config.settings import settings
 from jose import JWTError, jwt
 
 

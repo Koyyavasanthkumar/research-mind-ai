@@ -7,7 +7,7 @@ from fastapi import HTTPException, status
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 
-from backend.config.settings import settings
+from config.settings import settings
 
 
 class RateLimiterMiddleware(BaseHTTPMiddleware):
