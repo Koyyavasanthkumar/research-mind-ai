@@ -29,6 +29,6 @@ def get_db() -> Generator[Session, None, None]:
 
 
 def init_db() -> None:
-    from backend.models.database import BaseModelMixin  # noqa: F401
+    from models.database import BaseModelMixin  # noqa: F401
 
     Base.metadata.create_all(bind=engine)
