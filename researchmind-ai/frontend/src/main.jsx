@@ -17,8 +17,7 @@ import {
 } from "lucide-react";
 import "./styles.css";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
-
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://research-mind-ai.onrender.com";
 const navItems = [
   { id: "home", label: "Home", icon: Home },
   { id: "research", label: "Research", icon: Search },
