@@ -42,16 +42,7 @@ app.add_middleware(
 )
 
 
-# Custom middlewares first
-app.add_middleware(RateLimiterMiddleware)
-app.add_middleware(RequestTimeoutMiddleware)
-app.add_middleware(SecurityHeadersMiddleware)
-app.add_middleware(CSRFMiddleware)
-app.add_middleware(AuthContextMiddleware)
-app.add_middleware(RequestLoggingMiddleware)
-
-
-# CORS MUST BE LAST
+## CORS FIRST (outermost)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -63,6 +54,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+# Other middleware after CORS
+app.add_middleware(RateLimiterMiddleware)
+app.add_middleware(RequestTimeoutMiddleware)
+app.add_middleware(SecurityHeadersMiddleware)
+app.add_middleware(CSRFMiddleware)
+app.add_middleware(AuthContextMiddleware)
+app.add_middleware(RequestLoggingMiddleware)
 
 @app.on_event("shutdown")
 async def shutdown() -> None:
