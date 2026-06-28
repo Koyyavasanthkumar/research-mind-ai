@@ -9,8 +9,8 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
 from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer
 
-from backend.models.schemas import Report
-from backend.utils.config import settings
+from models.schemas import Report
+from utils.config import settings
 
 
 def export_report_pdf(report: Report) -> str:

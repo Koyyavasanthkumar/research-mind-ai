@@ -6,7 +6,7 @@ from typing import Any
 
 import google.generativeai as genai
 
-from backend.utils.config import settings
+from utils.config import settings
 
 logger = logging.getLogger(__name__)
 

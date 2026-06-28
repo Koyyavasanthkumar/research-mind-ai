@@ -5,8 +5,8 @@ from urllib.parse import urlparse
 
 from tavily import TavilyClient
 
-from backend.models.schemas import SearchResult
-from backend.utils.config import settings
+from models.schemas import SearchResult
+from utils.config import settings
 
 logger = logging.getLogger(__name__)
 
