@@ -2,7 +2,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field, field_validator
 
-from backend.utils.sanitization import sanitize_text
+from utils.sanitization import sanitize_text
 
 
 class MemoryStoreRequest(BaseModel):
